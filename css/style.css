@@ -856,7 +856,6 @@ ul { list-style: none; }
   .zone-list { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; }
   .project-hero h1 { font-size: 32px; }
-}
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-grid { grid-template-columns: 1fr; gap: 36px; }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
