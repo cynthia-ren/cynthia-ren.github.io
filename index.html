@@ -3,51 +3,322 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>霞工的环保圈｜环保行业资讯</title>
+  <title>霞工 · 环博会展位服务 | 让环保企业找到理想展位</title>
+  <meta name="description" content="深耕环保行业，专注中国环博会展位销售与参展服务，为环保设备、水处理、固废处理、环境监测等企业提供展位咨询、选位与参展全流程服务。">
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    *{box-sizing:border-box;margin:0;padding:0;}
-    body{font-family:"Microsoft Yahei",sans-serif;color:#222;background:#f7f9fa;line-height:1.7;}
-    .container{max-width:900px;margin:0 auto;padding:24px 16px;}
-    header{text-align:center;margin-bottom:40px;padding-bottom:20px;border-bottom:1px solid #ddd;}
-    h1{color:#23593c;margin-bottom:8px;font-size:28px;}
-    .desc{color:#555;font-size:16px;}
-    nav{margin:20px 0;}
-    nav a{margin:0 12px;text-decoration:none;color:#23593c;font-weight:500;}
-    nav a:hover{text-decoration:underline;}
-    .card{background:#fff;padding:20px;margin:16px 0;border-radius:8px;box-shadow:0 1px 3px #00000014;}
-    .card h3 a{color:#222;text-decoration:none;}
-    .card h3 a:hover{color:#23593c;}
-    .date{color:#888;font-size:14px;margin:6px 0;}
-    footer{margin-top:60px;padding-top:20px;border-top:1px solid #ddd;font-size:13px;color:#666;}
+    .special-zone-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 4px 0 16px;
+      padding: 12px 16px;
+      background: var(--accent-light);
+      border: 1px dashed rgba(18, 163, 127, 0.45);
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary-dark);
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .special-zone-link:hover { background: #fff; border-color: var(--accent); }
+    .special-zone-link .sz-flag {
+      flex-shrink: 0;
+      font-size: 12px;
+      color: #fff;
+      background: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+    }
+    .special-zone-link .sz-arrow { margin-left: auto; color: var(--accent); }
   </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <h1>霞工的环保圈</h1>
-    <p class="desc">环保行业资讯｜政策解读｜项目商机｜产业动态</p>
-    <nav>
-      <a href="index.html">首页</a>
-      <a href="articles.html">行业文章</a>
-      <a href="about.html">关于我</a>
-    </nav>
+
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img src="images/logo.jpg" alt="霞工的环保圈" class="logo-img">
+        <span>霞工 · 环博会展位服务</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="about.html">关于我</a></li>
+          <li><a href="services.html">服务内容</a></li>
+          <li><a href="projects.html">展会项目</a></li>
+          <li><a href="articles.html">行业动态</a></li>
+          <li><a href="contact.html" class="nav-cta">联系我</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <div>
-    <div class="card">
-      <h3><a href="articles.html">前往行业文章列表 →</a></h3>
-      <p class="date">收录CCUS、废气、固废、环境监测、水务等行业资讯推文</p>
-    </div>
-    <div class="card">
-      <h3>站点说明</h3>
-      <p>本网站同步公众号「霞工的环保圈」行业内容，聚焦环保产业招投标、政策、技术动态。</p>
-    </div>
-  </div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="hero-badge">● 中国环博会 · 展位销售服务</span>
+        <h1>深耕环保行业，<br>让每一个企业<span class="accent-text">找到理想的展位</span></h1>
+        <p>我专注于中国环博会展位销售，为水、废气、固废、环境监测、碳中和等领域的企业提供环博会展位咨询、推荐优质的展位，为环保企业从选展位到参展提供全流程服务，让您参展更省心更安心！</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-white">咨询展位方案</a>
+          <a href="services.html" class="btn btn-outline" style="border-color:#fff;color:#fff;">了解服务内容</a>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-item">
+            <div class="meta-num">10+</div>
+            <div class="meta-label">环保展会服务经验</div>
+          </div>
+        </div>
+      </div>
 
-  <footer>
-    <p>免责声明：本站仅作行业信息交流，不构成任何投资、采购、合作建议。所有内容请以官方文件为准。</p>
-    <p>公众号：霞工的环保圈</p>
+      <div class="hero-card">
+        <h3>我能帮您做什么</h3>
+        <p class="role">环博会展位销售 · 参展方案顾问</p>
+        <ul>
+          <li><span class="dot"></span>根据企业的展品推荐合适的展馆</li>
+          <li><span class="dot"></span>了解企业参展的预算和设备人员情况，推荐合适的展位区域和面积</li>
+          <li><span class="dot"></span>跟进展前筹备和展会现场布展等全流程服务</li>
+          <li><span class="dot"></span>对接环保产业资源，拓展行业人脉与商机</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 服务概览 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">SERVICES</span>
+        <h2>一站式展位服务</h2>
+        <p>从选位到落地，围绕参展的全流程需求提供专业支持</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="icon">📍</div>
+          <h3>展位销售与选位</h3>
+          <p>熟悉环博会各展馆、展区与行业分布，根据企业产品和目标客户，推荐最优展位位置与面积方案。</p>
+          <a class="card-link" href="services.html">查看详情 →</a>
+        </div>
+        <div class="card">
+          <div class="icon">📋</div>
+          <h3>参展方案规划</h3>
+          <p>根据企业的预算和客户群体，推荐合适的展馆、展位，给出适合企业自身要求的整体参展方案，让参展更省心、更安心！</p>
+          <a class="card-link" href="services.html">查看详情 →</a>
+        </div>
+        <div class="card">
+          <div class="icon">🤝</div>
+          <h3>行业资源对接</h3>
+          <p>链接环保产业链上下游企业与买家资源，帮助展商在现场获得更多高质量商机与合作机会。</p>
+          <a class="card-link" href="services.html">查看详情 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 重点展会项目 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">EXHIBITIONS</span>
+        <h2>重点展会项目</h2>
+        <p>国内与国际环保展会资源，帮企业选对展台、走进对的市场</p>
+      </div>
+      <div class="grid-2">
+        <article class="card project-card">
+          <div class="pc-head">
+            <div class="pc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/><path d="M10 8h4"/></svg>
+            </div>
+            <div>
+              <div class="pc-title">上海国际环博会</div>
+              <div class="pc-tagline">亚洲环保旗舰大展 · 全球第二大环保展</div>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-facts">
+              <div class="pc-fact"><b>时间</b>2027年4月20—22日</div>
+              <div class="pc-fact"><b>地点</b>上海新国际博览中心</div>
+              <div class="pc-fact"><b>规模</b>18万㎡ · 2000+参展商 · 9万+专业观众</div>
+            </div>
+            <p class="pc-desc">第28届上海国际环博会，主题「固本拓新 · 智循赋能」，一站式呈现水、气、回收与循环经济创新解决方案。</p>
+            <a href="recycling.html" class="special-zone-link"><span class="sz-flag">专题展区</span>资源再生与回收利用展区 · E5—E7 馆<span class="sz-arrow">→</span></a>
+            <a href="shanghai.html" class="btn btn-primary">查看详情</a>
+          </div>
+        </article>
+        <article class="card project-card">
+          <div class="pc-head">
+            <div class="pc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg>
+            </div>
+            <div>
+              <div class="pc-title">沙特国际环博会</div>
+              <div class="pc-tagline">IFAT Saudi Arabia · 中东绿色市场</div>
+            </div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-facts">
+              <div class="pc-fact"><b>时间</b>2027年9月4—6日</div>
+              <div class="pc-fact"><b>地点</b>沙特·利雅得前沿会展中心</div>
+              <div class="pc-fact"><b>规模</b>预计 550+ 参展企业 · 2.5万+专业观众</div>
+            </div>
+            <p class="pc-desc">沙特王国唯一专注水处理、固废管理与环保技术的国家级盛会，紧抓「愿景 2030」绿色转型机遇，助力企业出海中东。</p>
+            <a href="saudi.html" class="btn btn-primary">查看详情</a>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="projects.html" class="btn btn-outline">查看全部展会项目</a>
+      </div>
+    </div>
+  </section>
+  <!-- 关于我 -->
+  <section class="section section-soft">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="avatar"><img src="images/logo.jpg" alt="霞工的环保圈"></div>
+        <h3>霞工</h3>
+        <p class="sub">环博会展位销售 · 环保产业服务者</p>
+        <div class="about-tags">
+          <span class="tag">水处理</span>
+          <span class="tag">固废处理</span>
+          <span class="tag">大气治理</span>
+          <span class="tag">环境监测</span>
+          <span class="tag">碳中和</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>深耕环保产业，<br>懂行业，更懂参展企业</h2>
+        <p>我长期服务于环保行业，专注中国环博会展位销售与参展对接，深入了解水、固废、大气、环境监测、碳中和等细分赛道的行业动态与参展需求。</p>
+        <div class="points">
+          <div class="point">
+            <span class="check">✓</span>
+            <p><b>懂行业</b> —— 持续跟踪环保产业政策与市场趋势，能帮企业判断是否值得参展、如何参展。</p>
+          </div>
+          <div class="point">
+            <span class="check">✓</span>
+            <p><b>懂展位</b> —— 熟悉展会布局与流量逻辑，帮企业在预算内选到曝光效果更好的位置。</p>
+          </div>
+          <div class="point">
+            <span class="check">✓</span>
+            <p><b>懂服务</b> —— 从签约到布展、开展，全程跟进，让企业省心参展。</p>
+          </div>
+        </div>
+        <a href="about.html" class="btn btn-primary">了解更多</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 公众号 -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">WECHAT</span>
+        <h2>关注公众号「霞工的环保圈」</h2>
+        <p>持续分享环博会招展动态与环保行业观察，不错过关键信息</p>
+      </div>
+      <div style="max-width:520px;margin:0 auto;text-align:center;background:#fff;border:1px solid var(--border);border-radius:16px;padding:36px 30px;box-shadow:var(--shadow);">
+        <img src="images/gongzhonghao-qr.jpg" alt="霞工的环保圈公众号二维码" style="width:200px;height:200px;border-radius:10px;object-fit:cover;display:block;margin:0 auto 18px;">
+        <div style="font-weight:800;color:var(--primary-dark);font-size:20px;">霞工的环保圈</div>
+        <p style="color:var(--text-light);font-size:14px;margin:10px 0 0;">环博会展位资讯 · 环保行业观察 · 长按识别二维码关注</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最新动态 -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">NEWS</span>
+        <h2>行业动态</h2>
+        <p>环博会招展信息与环保行业观察，持续更新</p>
+      </div>
+      <div class="grid-3">
+        <article class="card article-card">
+          <div class="thumb">🏟️</div>
+          <div class="body">
+            <div class="meta"><span>2026-08-20</span><span>招展资讯</span></div>
+            <h3><a href="article-1.html">2026 环博会招展进行中：这些展位最抢手</a></h3>
+            <p>随着环保行业热度回升，环博会优质展位陆续放出，本文梳理今年最抢手的展区与选位要点。</p>
+          </div>
+        </article>
+        <article class="card article-card">
+          <div class="thumb">🏭</div>
+          <div class="body">
+            <div class="meta"><span>2026-08-12</span><span>行业观察</span></div>
+            <h3><a href="article-2.html">固废处理设备赛道升温，参展企业如何选位</a></h3>
+            <p>固废处理设备成为展会焦点，不同类型企业适合怎样的展位策略？一文讲清楚。</p>
+          </div>
+        </article>
+        <article class="card article-card">
+          <div class="thumb">📦</div>
+          <div class="body">
+            <div class="meta"><span>2026-08-05</span><span>参展攻略</span></div>
+            <h3><a href="article-3.html">第一次参展环博会？做好这几件事就够了</a></h3>
+            <p>从预算、选位到布展、宣传，给首次参展企业的完整准备清单。</p>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="articles.html" class="btn btn-outline">查看全部动态</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta">
+        <h2>正在计划参展环博会？</h2>
+        <p>无论您是新展商还是老展商，欢迎和我聊聊您的参展计划，我会结合行业情况给您实在的建议。</p>
+        <div class="btn-actions">
+          <a href="contact.html" class="btn btn-white">立即咨询</a>
+          <a href="articles.html" class="btn btn-outline" style="border-color:#fff;color:#fff;">先看看行业动态</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">霞工 · 环博会展位服务</div>
+          <p>深耕环保行业，专注中国环博会展位销售与参展服务，为环保企业提供展位咨询、选位与参展全流程支持。</p>
+        </div>
+        <div>
+          <h4>快速导航</h4>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我</a></li>
+            <li><a href="services.html">服务内容</a></li>
+            <li><a href="projects.html">展会项目</a></li>
+            <li><a href="articles.html">行业动态</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>联系方式</h4>
+          <ul>
+            <li>任彩霞 · 环博会展位销售</li>
+            <li>电话：021-2352 1112</li>
+            <li>手机：152 1674 7765</li>
+            <li>邮箱：cynthia.ren@mm-zm.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 霞工 · 环博会展位服务 · 保留所有权利
+      </div>
+    </div>
   </footer>
-</div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
